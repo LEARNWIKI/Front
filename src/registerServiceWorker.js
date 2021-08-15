@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-import { register } from 'register-service-worker'
+import { register } from 'register-service-worker' // пакет npm из которого мы берем
 
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
